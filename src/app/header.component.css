@@ -11,6 +11,7 @@ h1 {
     padding: 0.2em;
     display: inline-block;
     padding-left: 0.7em;
+	font-size:1.5em
 }
 
 .headerMenu {
@@ -25,7 +26,7 @@ h1 {
 .headerMenu li a {
   display: block;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: 0.5em;
   color: #ddd;
 }

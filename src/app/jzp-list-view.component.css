@@ -26,11 +26,11 @@
 }
 
 .main .Document:nth-child(even) {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .main .Document:nth-child(odd) {
-  background-color: #ddd;
+  background-color: #f9f9f9;;
 }
 
 .main .Document div {

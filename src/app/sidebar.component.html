@@ -1,6 +1,27 @@
 <div class="mainMenu" [style.height.px]="height">
     <ul>
-        <li><a href="javascript:void" routerLink="/vd-list" routerLinkActive="active" (click)="onClick('vd')" [ngClass]="{'active': isSelected('vd')}">Verlaufsdokumentationen</a></li>
-        <li><a href="javascript:void" routerLink="/jzp-list" routerLinkActive="active" (click)="onClick('jzp')" [ngClass]="{'active': isSelected('jzp')}">Jahreszielplanungen</a></li>
+    	<li><a href="javascript:void" routerLink="/profil" routerLinkActive="active" (click)="onClick('profil')" [ngClass]="{'active': isSelected('profil')}"><i class="fa fa-user" aria-hidden="true"></i> Profil</a></li>
+        <ul class="submenu">
+        	<li><a href="javascript:void" routerLink="/jahreszielplanungen" routerLinkActive="active" (click)="onClick('jzp')" [ngClass]="{'active-sub': isSelected('jzp')}">Meine Daten</a></li>
+            <li><a href="javascript:void" routerLink="/passwort-aendern" routerLinkActive="active" (click)="onClick('pw')" [ngClass]="{'active-sub': isSelected('pw')}">Passwort ändern</a></li>
+        </ul>
+        <li><a href="javascript:void" (click)="onClick('docs')" [ngClass]="{'active': isSelected('docs')}"><i class="fa fa-file-text" aria-hidden="true"></i> Dokumente</a></li>
+        <ul class="submenu">
+            <li><a href="javascript:void" routerLink="/verlaufsdokumentationen" routerLinkActive="active" (click)="onClick('vd')" [ngClass]="{'active-sub': isSelected('vd')}">Verlaufsdokumentationen</a></li>
+            <li><a href="javascript:void" routerLink="/jahreszielplanungen" routerLinkActive="active" (click)="onClick('jzp')" [ngClass]="{'active-sub': isSelected('jzp')}">Jahreszielplanungen</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active-sub': isSelected('jze')}">Jahreszielevaluationen</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active-sub': isSelected('jze')}">Fallverlaufsbesprechungen</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active-sub': isSelected('jze')}">Erhebungen von Ist-Zuständen</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active-sub': isSelected('jze')}">Anwesenheitslisten</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active-sub': isSelected('jze')}">Bedarfslisten</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active-sub': isSelected('jze')}">Programmplan</a></li>
+        </ul>
+        
+        <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('jze')" [ngClass]="{'active': isSelected('jzp')}"><i class="fa fa-cogs" aria-hidden="true"></i> Einstellungen</a></li>
+        <ul class="submenu">
+        	<li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('vd')" [ngClass]="{'active': isSelected('vd')}"> Rollen / Zugriffsrechte</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('vd')" [ngClass]="{'active': isSelected('vd')}"> Benutzer verwalten</a></li>
+            <li><a href="javascript:void" routerLink="#" routerLinkActive="active" (click)="onClick('vd')" [ngClass]="{'active': isSelected('vd')}"> Klienten verwalten</a></li>
+        </ul>
     </ul>
 </div>

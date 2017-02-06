@@ -66,13 +66,19 @@
 }
 
 .container-header {
-    background-color: #900;
-    padding: 0.5em;
-    color: #eee;
-    box-sizing: border-box;
+    color: #FFF;
+    background: #900 !important;
+    text-decoration: none!important;
+    text-transform: none;
+    font-size: 12px;
+	padding:0.5em;
 }
 
 .container-body {
     padding: 0.5em;
     border: solid 1px #ccc;
+}
+
+.view-content {
+	padding:1em;
 }

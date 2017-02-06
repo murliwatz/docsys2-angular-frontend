@@ -15,10 +15,10 @@ import {VDListViewComponent} from './vd-list-view.component';
 import {ProfileComponent} from './profile.component';
 
 const appRoutes: Routes = [
-  { path: 'jzp-list', component: JZPListViewComponent },
+  { path: 'jahreszielplanungen', component: JZPListViewComponent },
   { path: 'jzp-edit/:id', component: JZPEditComponent },
-  { path: 'vd-list', component: VDListViewComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'verlaufsdokumentationen', component: VDListViewComponent },
+  { path: 'profil', component: ProfileComponent }
 ];
 
 @NgModule({

@@ -13,13 +13,13 @@ export class ViewComponent {
     height = 0;
 
     constructor() {
-        this.width = window.innerWidth - 250;
+        this.width = window.innerWidth - 201;
         this.height = window.innerHeight - 50;
     }
 
     @HostListener('window:resize', ['$event'])
     onResize(event) {
-        this.width = window.innerWidth - 250;
+        this.width = window.innerWidth - 201;
         this.height = window.innerHeight - 50;
     }
 
