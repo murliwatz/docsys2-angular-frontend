@@ -1,0 +1,16 @@
+.main {
+  color: #333;
+  overflow: auto;
+  width: 100%;
+  padding: 0.5em;
+      box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+a, input {
+  margin: 0.5em 0;
+}

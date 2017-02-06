@@ -1,0 +1,6 @@
+<div class="mainMenu" [style.height.px]="height">
+    <ul>
+        <li><a href="javascript:void" routerLink="/vd-list" routerLinkActive="active" (click)="onClick('vd')" [ngClass]="{'active': isSelected('vd')}">Verlaufsdokumentationen</a></li>
+        <li><a href="javascript:void" routerLink="/jzp-list" routerLinkActive="active" (click)="onClick('jzp')" [ngClass]="{'active': isSelected('jzp')}">Jahreszielplanungen</a></li>
+    </ul>
+</div>

@@ -1,0 +1,44 @@
+.main {
+  color: #333;
+  overflow: auto;
+  width: 100%;
+}
+
+.main .Documents {
+  width: 100%;
+  display: table;
+  box-sizing: border-box;
+}
+
+.main .Document {
+  display:table-row;
+}
+
+.main .DocumentHeader {
+  display:table-row;
+}
+
+.main .DocumentHeader div {
+  display: table-cell;
+  padding: 0.7em;
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.main .Document:nth-child(even) {
+  background-color: #eee;
+}
+
+.main .Document:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.main .Document div {
+  display: table-cell;
+  padding: 0.7em;
+  color: #333 !important;
+}
+
+.main .Document div i {
+  color: #333 !important;
+}

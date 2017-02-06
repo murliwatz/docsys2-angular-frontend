@@ -1,0 +1,16 @@
+<div class="main" [style.width.px]="width" [style.height.px]="height" (window:resize)="onResize($event)">
+    <div class="Documents" [style.width.px]="width" [style.height.px]="height">
+        <div class="Document" *ngFor="let doc of documents">
+            <div class="DocumentCheckbox"><input type="checkbox" /></div>
+            <div class="DocumentIcon"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+            <div class="DocumentType">{{doc.desc}}</div>
+            <div class="DocumentKlient">{{doc.klient}}</div>
+            <div class="DocumentDate">{{doc.date}}</div>
+            <div class="DocumentEditDate">{{doc.date}}</div>
+            <div class="DocumentEdit"><a href="javascript:void" [routerLink]="['/jzp-edit', 1]" routerLinkActive="active" title="Bearbeiten"><i class="fa fa-pencil" aria-hidden="true"></i></a></div>
+            <div class="DocumentRemove"><a href="#" title="Löschen"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+            <div class="DocumentRemove"><a href="#" title="Als PDF herunterladen"><i class="fa fa-download" aria-hidden="true"></i></a></div>
+            <div class="DocumentInfo"><a href="#" title="Informationen"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+        </div>
+    </div>
+</div>
