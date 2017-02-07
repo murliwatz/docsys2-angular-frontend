@@ -4,8 +4,8 @@ import {VDDocService} from './vddoc.service';
 
 @Component({
   selector: 'ds-vd-listview',
-  templateUrl: './jzp-list-view.component.html',
-  styleUrls: ['./jzp-list-view.component.css'],
+  templateUrl: './vd-list-view.component.html',
+  styleUrls: ['./vd-list-view.component.css'],
   providers: [
       VDDocService
   ]

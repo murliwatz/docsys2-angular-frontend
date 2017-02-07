@@ -23,6 +23,7 @@
   padding: 0.7em;
   color: #333 !important;
   font-weight: bold;
+  border-bottom: 3px #900 solid;
 }
 
 .main .Document:nth-child(even) {

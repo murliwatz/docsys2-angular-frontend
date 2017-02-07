@@ -58,7 +58,7 @@
 }
 
 .active-sub {
-    color: #900;
+    color: #900 !important;
 }
 
 .mainMenu ul.submenu {

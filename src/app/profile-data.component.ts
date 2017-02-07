@@ -2,13 +2,13 @@ import { Component, EventEmitter, Input, Output,HostListener, OnChanges} from '@
 import {AppComponent} from './app.component';
 
 @Component({
-  selector: 'ds-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'],
+  selector: 'ds-profile-data',
+  templateUrl: './profile-data.component.html',
+  styleUrls: ['./profile-data.component.css'],
   providers: [
   ]
 })
-export class ProfileComponent {
+export class ProfileDataComponent {
 
     data = {
         firstName: "Paul",

@@ -12,13 +12,15 @@ import {ViewComponent} from './view.component';
 import {JZPListViewComponent} from './jzp-list-view.component';
 import {JZPEditComponent} from './jzp-edit.component';
 import {VDListViewComponent} from './vd-list-view.component';
-import {ProfileComponent} from './profile.component';
+import {ProfileDataComponent} from './profile-data.component';
+import {ProfilePWComponent} from './profile-change-pw.component';
 
 const appRoutes: Routes = [
   { path: 'jahreszielplanungen', component: JZPListViewComponent },
   { path: 'jzp-edit/:id', component: JZPEditComponent },
   { path: 'verlaufsdokumentationen', component: VDListViewComponent },
-  { path: 'profil', component: ProfileComponent }
+  { path: 'meine-daten', component: ProfileDataComponent },
+  { path: 'passwort-aendern', component: ProfilePWComponent}
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     JZPListViewComponent,
     JZPEditComponent,
     VDListViewComponent,
-    ProfileComponent
+    ProfileDataComponent,
+    ProfilePWComponent
   ],
   imports: [
     BrowserModule,
